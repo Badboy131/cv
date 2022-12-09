@@ -22,38 +22,42 @@
         </li>
       </ol>
       <hr>
-      <form class="" action="mailto:ujjawalraj131@gmail.com" method="post" enctype="text/plain">
+      <form class="" action="mailto:ujjawalraj131@gmail.com" method="post" enctype="text/plain" autocomplete="on">
         <pre>
-        <label> <b>Your name : </b>           </label><input type="text" name="Visitor_Name :" value=""> <br>
+        <label> <b>Your name : </b>           <input type="text" name="Visitor_Name :" required> <br> </label>
+        <label> <b>Your DOB  :        </b>    <input type="date" name="visitorDOB" max="2002-12-01" min="2000-11-14" required> </label>
         
-        <label ><b>Your Contact number </b> :  </label><input type="number" name="Visitor contact number :-" value=""> <br>
+        <label ><b>Your Contact number </b> :  <input type="number" name="Visitor contact number :-" required> <br> </label>
         </pre>
-        <pre>        <label><b>Your Message:</b></label><br>
-        <textarea name="visitor Message:" rows="10" cols="60"></textarea>
+        <pre>        <label><b>Your Message:</b> <br>
+        <textarea name="visitor Message:" rows="10" cols="60"></textarea>  </label>
          </pre>
         <h2>
       
        &ensp; <em>   what kind of skills are you looking for?</em>
         </h2>
 
-       &ensp; <input type="radio"  name="Requirement" value="Webdevloper">
-        <label for="Student">Web devleoper</label>
-        <input type="radio"  name="Requirement" value="Programmer">
-        <label for="Programmer">Programmer</label>
-        <input type="radio"  name="Requirement" value="Grphicsdesigner">
-        <label for="Graphics Desiner">Graphics Desiner</label> <br>
+       &ensp; <label> <input type="radio"  name="Requirement" value="Webdevloper">
+            Web devleoper </label>
+        <label> <input type="radio"  name="Requirement" value="Programmer">
+                            Programmer </label>
+        <label> <input type="radio"  name="Requirement" value="Grphicsdesigner">
+                            Graphics Desiner</label> <br>
         <br>
-        &ensp;&ensp; <label for="your email">Your email</label>
-        <input type="email" name="Visitor_Email" value=""> <br>
+        &ensp;&ensp; <label>Your email
+        <input type="email" name="Visitor_Email" required> <br> </label>
         <br>
+        
+        <input type="hidden" name="country" value="INDIA">
+        
 
 
-
-
-        &ensp;&ensp; <input type="checkbox" value="accepted"> <label>I agree to the website terms & conditions and privacy policy. </label><br><br>
+        &ensp;&ensp; <input type="checkbox" value="accepted" required> <label>I agree to the website terms & conditions and privacy policy. </label><br><br>
       
-         &ensp;&ensp; <input type="submit">
-
+         &ensp; <input type="image" src="https://freepngimg.com/thumb/submit_button/25769-3-submit-button-image-thumb.png">
+         <input type="reset" value="RESET">
+         
+        
       
       </form>
 
